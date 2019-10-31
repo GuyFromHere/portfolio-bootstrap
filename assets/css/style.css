@@ -24,20 +24,29 @@ h1 {
 /* header */
 /*        */
 
-.header {
-	/* 	width: 100%; */
+.navbar {
 	background: #ffffff;
 	border-bottom: 2px solid #cccccc;
 	margin: 0 auto;
+	padding: 0;
 }
 
 .left {
-	position: relative;
 	text-align: center;
+	height: 100%;
+	background: #4aaaa5;
+	color: #ffffff;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.left h1 {
+	color: #ffffff;
 }
 
 .right {
-	position: relative;
+	font-size: 14pt;
+	margin: 0 auto;
 }
 
 .right li {
@@ -46,13 +55,6 @@ h1 {
 	padding: 15px 0 15px 15px;
 	line-height: 200%;
 	font-size: 14pt;
-}
-
-.left h1 {
-	float: left;
-	background: #4aaaa5;
-	color: #ffffff;
-	padding: 20px;
 }
 
 main {
@@ -199,4 +201,14 @@ footer {
 	display: inline-block;
 	padding-top: 26px;
 	font-size: 10px;
+}
+
+/*       */
+/* media */
+/*       */
+
+@media (max-width: 768px) {
+	.container {
+		width: 600px;
+	}
 }
