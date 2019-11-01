@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			function getRandomInt(max) {
+				return Math.floor(Math.random() * Math.floor(max));
+			}
+
+			var playerChoice;
+			var computerChoice;
+			var playerWins = 0;
+			var computerWins = 0;
+			var ties = 0;
+			var rps = ['r', 'p', 's'];
+
+			for (var x = 0; x < 10; x++) {
+				playerChoice = prompt('Round ' + (x + 1) + ': Enter r, p, or s.');
+				computerChoice = rps[getRandomInt(3)];
+				if (playerChoice === computerChoice) {
+					ties++;
+					alert('You tied! Both picked ' + playerChoice);
+				} else if (
+					(playerChoice === 'r' && computerChoice === 's') ||
+					(playerChoice === 's' && computerChoice === 'p') ||
+					(playerChoice === 'p' && computerChoice === 'r')
+				) {
+					playerWins++;
+					computerWins--;
+					alert(
+						'You Won! Player picked ' +
+							playerChoice +
+							' and computer picked ' +
+							computerChoice +
+							'. Your score is: ' +
+							playerWins
+					);
+				} else {
+					playerWins--;
+					computerWins++;
+					alert(
+						'You Lost! Player picked r and computer picked p. Your score is: ' +
+							playerWins
+					);
+				}
+			}
+			alert(
+				'Game over. Your score is ' +
+					playerWins +
+					'. Computer: ' +
+					computerWins +
+					' Ties: ' +
+					ties
+			);
+		</script>
+	</body>
+</html>

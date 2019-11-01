@@ -41,13 +41,18 @@ h1 {
 	font-weight: bold;
 }
 
+li {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
 /*           */
 /* Container */
 /*           */
 
 .container {
-	margin: 0 auto;
-	width: 920px;
+	margin-left: 48px;
+	width: 820px;
 	border: 1px solid #dddddd;
 	background: #ffffff;
 	padding: 20px;
@@ -57,15 +62,4 @@ h1 {
 	color: #4aaaa5;
 	border-bottom: 2px solid #dddddd;
 	padding: 10px 0;
-} /* 
-
-#blurb p {
-	padding: 10px;
-	line-height: 150%;
 }
-
-#blurbPic {
-	float: left;
-	padding-top: 10px;
-	padding-right: 10px;
-} */
