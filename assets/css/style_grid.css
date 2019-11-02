@@ -38,6 +38,27 @@ h1 {
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
+.rowH1 {
+	background: #4aaaa5;
+	height: 100%;
+	margin: 0;
+	padding: 20px;
+	color: #ffffff;
+	font-size: 24pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+.headerList {
+	margin: auto;
+	text-align: right !important;
+}
+
+.list-group-item {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
 li {
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
