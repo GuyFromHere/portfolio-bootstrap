@@ -30,50 +30,54 @@
 	</head>
 
 	<body>
-			<div class="container-fluid">
-					<div class="row navbar">
-					  <div class="col-xs-12 col-md-6 navHeader">
-						<h1 class="rowH1 ml-4">Dan Dismuke</h1>
-					  </div>
-					  <div class="col-xs-6 col-md-6 headerList">
-						<div class="list-group list-group-horizontal justify-content-center">
-							<a
-								class="list-group-item flex-fill border-top-0 border-bottom-0 border-left-0 border-right ml-5"
-								href="index.html"
-							>
-								About
-							</a>
-							<a
-							  class="list-group-item flex-fill border-top-0 border-bottom-0 border-left-0 border-right mx-5"
-							  href="portfolio.html"
-							>
-								  Portfolio
-							</a>
-							<a
-							  class="list-group-item flex-fill border-top-0 border-bottom-0 border-left-0 border-right-0 mr-n1"
-							  href="contact.html"
-							>
-								  Contact
-							</a>
-						</div>
-					</div>
-					
+		<div class="container-fluid">
+			<div class="row navbar">
+				<div class="col-xs-12 col-md-6 navHeader">
+					<h1 class="rowH1 ml-4">Dan Dismuke</h1>
 				</div>
+				<div class="col-xs-6 col-md-6 headerList">
+					<div class="list-group list-group-horizontal justify-content-center">
+						<a
+							class="list-group-item flex-fill border-top-0 border-bottom-0 border-left-0 border-right ml-5"
+							href="index.html"
+						>
+							About
+						</a>
+						<a
+							class="list-group-item flex-fill border-top-0 border-bottom-0 border-left-0 border-right mx-5"
+							href="portfolio.html"
+						>
+							Portfolio
+						</a>
+						<a
+							class="list-group-item flex-fill border-top-0 border-bottom-0 border-left-0 border-right-0 mr-n1"
+							href="contact.html"
+						>
+							Contact
+						</a>
+					</div>
+				</div>
+			</div>
 
-		<main>
-			<div class="container">
+			<div class="container mt-3 ml-4 mr-3 mb-5">
 				<div class="row">
 					<div class="col-12">
-						<div class="row">
-							<div class="col-12">
-								<h1>Contact</h1>
+						<div class="ml-5 mr-5"> 
+							<div class="row">
+								<div class="col-12">
+									<h1>Contact</h1>
+								</div>
 							</div>
-						</div>
-						<form action="javascript:showForm();"></form>
+						<form action="javascript:showForm();">
 							<div class="row">
 								<div class="col-12">
 									<label>Name</label><br />
-									<input type="text" id="name" placeholder="John Smith" />
+									<input
+										type="text"
+										class="form-control"
+										id="name"
+										placeholder="John Smith"
+									/>
 								</div>
 							</div>
 							<div class="row">
@@ -81,6 +85,7 @@
 									<label>Email</label><br />
 									<input
 										type="text"
+										class="form-control"
 										id="email"
 										placeholder="example@gmail.com"
 									/>
@@ -89,7 +94,12 @@
 							<div class="row">
 								<div class="col-12">
 									<label>Message</label><br />
-									<textarea id="message"></textarea><br />
+									<textarea
+										class="form-control"
+										rows="4"
+										id="message"
+									></textarea
+									><br />
 									<input type="submit" id="submit" />
 								</div>
 							</div>
@@ -97,7 +107,9 @@
 					</div>
 				</div>
 			</div>
-		</main>
-		<footer><span id="copyright">Copyright &copy;</span></footer>
+		</div>
+		<nav class="navbar fixed-bottom footer">
+			<span id="copyright">Copyright &copy;</span>
+		</nav>
 	</body>
 </html>

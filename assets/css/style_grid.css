@@ -31,17 +31,6 @@ h1 {
 	padding: 0;
 }
 
-/* #headerTitle {
-	background: #4aaaa5;
-	height: 100%;
-	padding: 20px;
-	color: #ffffff;
-	font-size: 24pt;
-	font-weight: bold;
-	text-align: center;
-	font-family: 'Georgia', Times, 'Times New Roman', serif;
-}
- */
 .rowH1 {
 	background: #4aaaa5;
 	height: 100%;
@@ -59,15 +48,9 @@ h1 {
 	padding-bottom: 0 !important;
 }
 
-li {
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
-}
-
 /*           */
 /* Container */
 /*           */
-
 .container {
 	border: 1px solid #dddddd;
 	background: #ffffff;
@@ -92,7 +75,6 @@ li {
 /*        */
 /* footer */
 /*        */
-
 .footer {
 	border-top: 8px solid #4aaaa5 !important;
 	background: #666666 !important;
@@ -117,8 +99,6 @@ li {
 
 @media (min-width: 641px) {
 	.list-group-item {
-		/* margin-right: 0 !important;
-		padding-right: 0 !important; */
 		padding-left: 0 !important;
 	}
 }
