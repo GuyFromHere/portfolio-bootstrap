@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Portfolio</title>
+		<title>GRID</title>
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
 		<link
 			rel="stylesheet"
@@ -12,73 +12,86 @@
 			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/style_grid.css" />
 	</head>
 
 	<body>
-		<header>
-			<nav class="navbar header">
-				<div class="d-flex flex-row left">
-					<h1>Dan Dismuke</h1>
-				</div>
-				<div class="d-flex flex-row-reverse right">
-					<ul>
-						<li><a href="contact.html">Contact</a></li>
-						<li>|</li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li>|</li>
-						<li><a href="index.html">About</a></li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+		<nav class="navbar navbar-expand-sm">
+			<h1 id="headerTitle" class="navbar-brand d-flex flex-row ml-4 mb-0">
+				Dan Dismuke
+			</h1>
+			<div class="d-flex flex-row-reverse ml-auto mr-3">
+				<ul class="list-group list-group-horizontal list-group-flush">
+					<li
+						class="list-group-item border-top-0 border-bottom-0 border-left-0 border-right align-center"
+					>
+						About
+					</li>
+					<li
+						class="list-group-item border-top-0 border-bottom-0 border-left border-right align-center"
+					>
+						Portfolio
+					</li>
+					<li
+						class="list-group-item border-top-0 border-bottom-0 border-left border-right-0 align-center"
+					>
+						Contact
+					</li>
+				</ul>
+			</div>
+		</nav>
 
-		<main>
-			<div class="container">
-				<h1>About Me</h1>
-				<img
-					width="100px"
-					src="assets/images/aboutme.jpg"
-					alt="Barely functioning post-marathon"
-					id="blurbPic"
-				/>
-				<div id="blurb">
-					<p>
-						Hello! My name is Dan. I am from the Bay Area originally but I have
-						spent most of my life along the I5 corridor in Oregon. I grew up
-						playing video games with my brother and I have had a lifelong
-						fascination with technology. As a child I also loved to write
-						stories. These creative impulses led me to initially pursue theatre
-						and music in college. Despite this, surprisingly, I graduated with a
-						degree in French. When that proved to be a futile career path I went
-						back to college to learn more about computers.
-					</p>
-					<p>
-						Programming seemed the natural avenue for all of my interests but I
-						didn't have the math credits to get in to the Computer Science
-						program. I got an Associate's in Computer Information Systems
-						instead. That put me on track for over a decade in the tech support
-						and IT fields. While I enjoy my current career, it doesn't scratch
-						my creative itch.
-					</p>
-					<p>
-						I recognize that no matter what job I have, there will be days that
-						I hate. Rather than chase a dream job only to experience the
-						disappointment of realizing that I hate it (sometimes) I want to
-						pursue work that satisfies me. When I enjoy what I <em>do</em>, I
-						can find fulfillment in my day even when I would rather be buried in
-						my sheets. I love making things. I love solving problems. Most of
-						all I love having concrete proof of my effort at the end of a long
-						day. Coding is all of those things.
-					</p>
-					<p>
-						Outside of work I still love video games and music but I don't have
-						much time for them these days. I live in Milwaukie, Oregon with my
-						wife, two kids, two dogs, and one obnoxious cat.
-					</p>
+		<div class="container mt-3 ml-4 mr-3">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="ml-5 mr-5">
+						<h1>About Me</h1>
+						<img
+							src="assets/images/bike_rs.jpg"
+							alt="You're gonna get hop ons"
+							class="image-fluid pr-2 float-left"
+							id="blurbPic"
+						/>
+						<p>
+							Hello! My name is Dan. I am from the Bay Area originally but I
+							have spent most of my life along the I5 corridor in Oregon. I grew
+							up playing video games with my brother and I have had a lifelong
+							fascination with technology. As a child I also loved to write
+							stories. These creative impulses led me to initially pursue
+							theatre and music in college. Despite this, surprisingly, I
+							graduated with a degree in French. When that proved to be a futile
+							career path I went back to college to learn more about computers.
+						</p>
+						<p>
+							Programming seemed the natural avenue for all of my interests but
+							I didn't have the math credits to get in to the Computer Science
+							program. I got an Associate's in Computer Information Systems
+							instead. That put me on track for over a decade in the tech
+							support and IT fields. While I enjoy my current career, it doesn't
+							scratch my creative itch.
+						</p>
+						<p>
+							I recognize that no matter what job I have, there will be days
+							that I hate. Rather than chase a dream job only to experience the
+							disappointment of realizing that I hate it (sometimes) I want to
+							pursue work that satisfies me. When I enjoy what I <em>do</em>, I
+							can find fulfillment in my day even when I would rather be buried
+							in my sheets. I love making things. I love solving problems. Most
+							of all I love having concrete proof of my effort at the end of a
+							long day. Coding is all of those things.
+						</p>
+						<p>
+							Outside of work I still love video games and music but I don't
+							have much time for them these days. I live in Milwaukie, Oregon
+							with my wife, two kids, two dogs, and one obnoxious cat.
+						</p>
+					</div>
 				</div>
 			</div>
-		</main>
-		<footer><span id="copyright">Copyright &copy;</span></footer>
+
+			<nav class="navbar fixed-bottom">
+				<span>Copyright</span>
+			</nav>
+		</div>
 	</body>
 </html>
