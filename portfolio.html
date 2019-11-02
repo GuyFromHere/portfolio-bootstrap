@@ -12,78 +12,119 @@
 			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/style_grid.css" />
 	</head>
 
 	<body>
-		<nav class="navbar w-100">
-			<div class="d-flex flex-row left">
-				<h1>Dan Dismuke</h1>
+			<div class="container-fluid">
+				<div class="row navbar">
+				  <div class="col-xs-12 col-md-6 navHeader">
+					<h1 class="rowH1 ml-4">Dan Dismuke</h1>
+				  </div>
+				  <div class="col-xs-6 col-md-6 headerList">
+					<div class="list-group list-group-horizontal justify-content-center">
+						<a
+							class="list-group-item flex-fill border-top-0 border-bottom-0 border-left-0 border-right ml-5"
+							href="index.html"
+						>
+							About
+						</a>
+						<a
+						  class="list-group-item flex-fill border-top-0 border-bottom-0 border-left-0 border-right mx-5"
+						  href="portfolio.html"
+						>
+							  Portfolio
+						</a>
+						<a
+						  class="list-group-item flex-fill border-top-0 border-bottom-0 border-left-0 border-right-0 mr-n1"
+						  href="contact.html"
+						>
+							  Contact
+						</a>
+					</div>
+				</div>
+				
 			</div>
-			<div class="d-flex flex-row-reverse right">
-				<ul>
-					<li><a href="contact.html">Contact</a></li>
-					<li>|</li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li>|</li>
-					<li><a href="index.html">About</a></li>
-				</ul>
-			</div>
-		</nav>
 
 		<main>
 			<div class="container">
 				<h1>Portfolio</h1>
-				<div id="portfolio">
-					<a
-						href="https://guyfromhere.github.io/"
-						target="_blank"
-						title="Minesweeper game built in vanilla javascript and HTML."
-					>
-						<div class="portfolio" id="minesweeper">
-							<h4>Minesweeper</h4>
+				<!-- <div  id="portfolio"> -->
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="col-md-4 col-sm-4">
+							<a
+								href="https://guyfromhere.github.io/"
+								target="_blank"
+								title="Minesweeper game built in vanilla javascript and HTML."
+							>
+								<div class="portfolio" id="minesweeper">
+									<h4>Minesweeper</h4>
+								</div>
+							</a>
 						</div>
-					</a>
-					<a
-						href="https://www.myinstants.com/search/?name=Fart"
-						target="_blank"
-						title="This isn't my site but someday I want to build a fart button app as project with my son, who also wants to learn to code."
-					>
-						<div class="portfolio" id="fart">
-							<h4>Fart Button</h4>
+						<div class="col-md-4 col-sm-4">
+							<a
+								href="https://www.myinstants.com/search/?name=Fart"
+								target="_blank"
+								title="This isn't my site but someday I want to build a fart button app as project with my son, who also wants to learn to code."
+							>
+								<div class="portfolio" id="fart">
+									<h4>Fart Button</h4>
+								</div>
+							</a>
 						</div>
-					</a>
-					<a
-						href="https://github.com/GuyFromHere/HowOldYouWereWhenApp"
-						target="_blank"
-						title="Node, Express, EJS, MongoDB, Bootstrap. This is (or will be when I finish it) a simple app that tells you how old you were on notable dates or events."
-					>
-						<div class="portfolio" id="howold">
-							<h4>How Old Were You</h4>
+						<div class="col-md-4 col-sm-4"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="col-md-4 col-sm-4">
+							<a
+								href="https://github.com/GuyFromHere/HowOldYouWereWhenApp"
+								target="_blank"
+								title="Node, Express, EJS, MongoDB, Bootstrap. This is (or will be when I finish it) a simple app that tells you how old you were on notable dates or events."
+							>
+								<div class="portfolio" id="howold">
+									<h4>How Old Were You</h4>
+								</div>
+							</a>
 						</div>
-					</a>
-					<a
-						href="https://github.com/GuyFromHere/MSUpdatesDeferred"
-						target="_blank"
-						title="Node, Express, EJS, MongoDB, Bootstrap. A side project for my job. I wanted a better way to keep track of issues with Windows updates."
-					>
-						<div class="portfolio" id="msud">
-							<h4>Deferred MS Updates</h4>
-						</div>
-					</a>
 
-					<a
-						href="https://github.com/GuyFromHere/NoteTaker"
-						target="_blank"
-						title="Node, Express, EJS, MongoDB, Bootstrap. Another work-inspired project. A simple interface for documenting service calls and other useful information."
-					>
-						<div class="portfolio" id="note">
-							<h4>Note Taker</h4>
+						<div class="col-md-4 col-sm-4">
+							<a
+								href="https://github.com/GuyFromHere/MSUpdatesDeferred"
+								target="_blank"
+								title="Node, Express, EJS, MongoDB, Bootstrap. A side project for my job. I wanted a better way to keep track of issues with Windows updates."
+							>
+								<div class="portfolio" id="msud">
+									<h4>Deferred MS Updates</h4>
+								</div>
+							</a>
 						</div>
-					</a>
+						<div class="col-md-4 col-sm-4"></div>
+					</div>
+					<div class="col-md-12 col-sm-12">
+						<div class="col-md-4 col-sm-4">
+							<a
+								href="https://github.com/GuyFromHere/NoteTaker"
+								target="_blank"
+								title="Node, Express, EJS, MongoDB, Bootstrap. Another work-inspired project. A simple interface for documenting service calls and other useful information."
+							>
+								<div class="portfolio" id="note">
+									<h4>Note Taker</h4>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-4 col-sm-4"></div>
+						<div class="col-md-4 col-sm-4"></div>
+					</div>
 				</div>
 			</div>
 		</main>
-		<footer><span id="copyright">Copyright &copy;</span></footer>
+		<nav class="navbar fixed-bottom footer">
+				<span id="copyright">Copyright &copy;</span>
+			</nav>
+		<!-- <footer><span id="copyright">Copyright &copy;</span></footer> -->
 	</body>
 </html>
