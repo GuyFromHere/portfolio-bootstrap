@@ -13,20 +13,6 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" type="text/css" href="assets/css/style_grid.css" />
-		<script type="text/javascript">
-			function showForm() {
-				let name = document.getElementById('name').value;
-				let email = document.getElementById('email').value;
-				let message = document.getElementById('message').value;
-				if (name && email) {
-					alert(
-						'Name: ' + name + '\nEmail:  ' + email + '\nMessage: ' + message
-					);
-				} else {
-					alert('You must enter a name and an email.');
-				}
-			}
-		</script>
 	</head>
 
 	<body>
@@ -60,55 +46,40 @@
 			</div>
 		</div>
 
-		<div class="container mt-3 ml-4 mr-3 mb-5">
+		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="ml-5 mr-5">
-						<div class="row">
-							<div class="col-12">
-								<h1>Contact</h1>
-							</div>
-						</div>
-						<form action="javascript:showForm();">
-							<div class="row">
-								<div class="col-12">
-									<label>Name</label><br />
-									<input
-										type="text"
-										class="form-control"
-										id="name"
-										placeholder="John Smith"
-									/>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-12">
-									<label>Email</label><br />
-									<input
-										type="text"
-										class="form-control"
-										id="email"
-										placeholder="example@gmail.com"
-									/>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-12">
-									<label>Message</label><br />
-									<textarea
-										class="form-control"
-										rows="4"
-										id="message"
-									></textarea
-									><br />
-									<input class="btn" type="submit" value="Submit" id="submit" />
-								</div>
-							</div>
-						</form>
-					</div>
+					<h1>Portfolio</h1>
 				</div>
 			</div>
+
+			<div class="row">
+				<div class="col-md-4 col-sm-6 portfolio mx-3 my-3" id="minesweeper">
+					<h4>Minesweeper</h4>
+				</div>
+				<div class="col-md-4 col-sm-6 portfolio mx-3 my-3" id="fart">
+					<h4>Fart Button</h4>
+				</div>
+				<!-- <div class="col-md-4 col-sm-6 portfolio mx-3 my-3"><h4></h4></div> -->
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-6 portfolio mx-3 my-3" id="howold">
+					<h4>How Old You Were</h4>
+				</div>
+				<div class="col-md-4 col-sm-6 portfolio mx-3 my-3" id="msud">
+					<h4>MS Updates Deferred</h4>
+				</div>
+				<!-- <div class="col-md-4 col-sm-6 portfolio mx-3 my-3"><h4></h4></div> -->
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-6 portfolio mx-3 my-3" id="note">
+					<h4>Note Taker</h4>
+				</div>
+				<!-- <div class="col-md-4 col-sm-6 portfolio mx-3 my-3"><h4></h4></div>
+				<div class="col-md-4 col-sm-6 portfolio mx-3 my-3"><h4></h4></div> -->
+			</div>
 		</div>
+
 		<nav class="navbar fixed-bottom footer">
 			<span id="copyright">Copyright &copy;</span>
 		</nav>

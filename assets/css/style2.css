@@ -24,10 +24,6 @@ h1 {
 /*        */
 /* header */
 /*        */
-.container-fluid {
-	width: 100%;
-	/* white-space: nowrap; */
-}
 
 .navbar {
 	background: #ffffff;
@@ -67,6 +63,10 @@ h1 {
 	padding: 10px 0;
 }
 
+.container p {
+	width: 90%;
+}
+
 #blurbPic {
 	max-width: 100%;
 	height: auto;
@@ -100,44 +100,4 @@ h1 {
 	.list-group-item {
 		padding-left: 0 !important;
 	}
-}
-
-/*				*/
-/* contact.html */
-/*				*/
-
-#submit {
-	border-radius: 0;
-	background: #4aaaa5;
-	color: #ffffff;
-}
-
-/*                */
-/* portfolio.html */
-/*                */
-
-.portfolio {
-	/* overflow: hidden; */
-	background: blue;
-	height: 180px !important;
-}
-
-#minesweeper {
-	background-image: url('../images/minesweeper.png');
-}
-
-#fart {
-	background-image: url('../images/fart.png');
-}
-
-#howold {
-	background-image: url('../images/howold.png');
-}
-
-#msud {
-	background-image: url('../images/msud.png');
-}
-
-#note {
-	background-image: url('../images/note.png');
 }
