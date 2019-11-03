@@ -17,8 +17,15 @@ a {
 	text-decoration: none;
 }
 
-h1 {
+h1,
+h4 {
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+h4 {
+	color: #4aaaa5;
+	border-bottom: 2px solid #dddddd;
+	padding: 10px 0;
 }
 
 /*        */
@@ -26,7 +33,6 @@ h1 {
 /*        */
 .container-fluid {
 	width: 100%;
-	/* white-space: nowrap; */
 }
 
 .navbar {
@@ -86,22 +92,6 @@ h1 {
 	font-size: 10px;
 }
 
-@media (max-width: 640px) {
-	.navHeader {
-		padding: 0 !important;
-	}
-
-	.rowH1 {
-		margin: 0 !important;
-	}
-}
-
-@media (min-width: 641px) {
-	.list-group-item {
-		padding-left: 0 !important;
-	}
-}
-
 /*				*/
 /* contact.html */
 /*				*/
@@ -117,11 +107,20 @@ h1 {
 /*                */
 
 .portfolio {
-	/* overflow: hidden; */
-	background: blue;
-	height: 180px !important;
+	overflow: hidden;
+	text-align: center;
+	/* 	height: 110px !important; */
 }
 
+.portfolio h5 {
+	position: absolute;
+	color: #ffffff;
+	background: #4aaaa5;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/* 
 #minesweeper {
 	background-image: url('../images/minesweeper.png');
 }
@@ -140,4 +139,20 @@ h1 {
 
 #note {
 	background-image: url('../images/note.png');
+} */
+
+@media (max-width: 640px) {
+	.navHeader {
+		padding: 0 !important;
+	}
+
+	.rowH1 {
+		margin: 0 !important;
+	}
+}
+
+@media (min-width: 641px) {
+	.list-group-item {
+		padding-left: 0 !important;
+	}
 }
