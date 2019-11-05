@@ -122,6 +122,13 @@ h4 {
 	transform: translate(-50%, -50%);
 }
 
+.carousel-caption {
+	max-width: 100%;
+	width: 100%;
+	background-color: #ffb81c;
+	left: 0;
+}
+
 @media (max-width: 640px) {
 	.navHeader {
 		padding: 0 !important;
